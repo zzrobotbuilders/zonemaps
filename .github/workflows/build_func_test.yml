@@ -1,0 +1,19 @@
+name: Testing
+
+on:
+  push:
+    branches:
+      - gitest
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+
+    - name: Create Folder
+      run: mkdir ~/test
+    - name: Take a nap
+      run: sleep 40
+    - name: Create Another Folder
+      run: mkdir ~/another_test
