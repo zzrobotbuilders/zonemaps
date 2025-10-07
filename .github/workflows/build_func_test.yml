@@ -1,5 +1,5 @@
 name: Testing
-
+run-name: ${{ github.actor }} is building ${{ github.ref_name }}
 on:
   push:
     branches:
